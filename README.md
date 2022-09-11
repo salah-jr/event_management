@@ -9,6 +9,9 @@
 - In your settings.php, at the bottom add `$settings['config_sync_directory'] = 'sites/default/config/sync';`
 - Run `drush config-import -y` to enable the required modules and import all configuration that comes with them
 
+### Note
+- The route for the subtask "page for listing published events is: `/events/published`"
+
 <br>
 
 ### If you have a problem with configs, please find the attached database 'database/drupal.sql' in the root directory and import it.
