@@ -13,6 +13,6 @@
 
 ### If you have a problem with configs, please find the attached database 'database/drupal.sql' in the root directory and import it.
 
-Admin credentials
+=> Admin credentials:-
 - username = salah
 - password = asd12345
