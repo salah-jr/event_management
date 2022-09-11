@@ -1,0 +1,5 @@
+<ul>
+{% for event in data %}
+  <li><a href="/link_app/web/node/{{ event['id'] }}">{{  event['title'] }}</a></li>
+{% endfor %}
+</ul>

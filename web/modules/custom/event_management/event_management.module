@@ -1,0 +1,33 @@
+<?php
+
+use Drupal\Core\Datetime\DrupalDateTime;
+
+function event_management_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+  if ($form_id == 'node_event_form') {
+    $form['#validate'][] = "checkEventDate";
+  }
+
+}
+
+function checkEventDate(&$form, \Drupal\Core\Form\FormStateInterface $form_state)
+{
+  $startDate = $form_state->getValue('field_start_date')[0]['value'];
+  $endDate = $form_state->getValue('field_end_date')[0]['value'];
+
+  if ($startDate instanceof DrupalDateTime && $endDate instanceof DrupalDateTime) {
+    if ($startDate->format('Y-m-d') > $endDate->format('Y-m-d')) {
+      $form_state->setErrorByName('field_end_date', 'The end date must not be before start date.');
+    }
+  }
+}
+
+function event_management_theme($existing, $type, $theme, $path) {
+  return [
+    'events_list_plublished' => [
+      'variables' => [
+        'data' => NULL,
+      ],
+    ]
+  ];
+}

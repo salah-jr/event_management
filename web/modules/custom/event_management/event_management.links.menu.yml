@@ -1,0 +1,6 @@
+event_management.admin_settings_form:
+  title: 'Event Management configuration'
+  route_name: event_management.admin_settings_form
+  description: 'Welcome event management admin'
+  parent: system.admin_config_system
+  weight: 99

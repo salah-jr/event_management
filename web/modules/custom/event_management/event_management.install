@@ -1,0 +1,36 @@
+<?php
+
+function event_management_install(){
+    $spec = [
+        'description' => 'Scanning Actions Raw Data',
+        'fields' => [
+          'id' => [
+            'type' => 'serial',
+            'not null' => TRUE,
+          ],
+          'uid' => [
+            'type' => 'int',
+            'not null' => TRUE,
+            'default' => '0',
+            'unsigned' => TRUE,
+          ],
+          'created_date' => [
+            'type' => 'varchar',
+            'mysql_type' => 'datetime',
+            'not null' => TRUE,
+          ],
+        ],
+        'primary key' => ['id'],
+      ];
+     $schema = \Drupal\Core\Database\Database::getConnection()->schema();
+
+     $schema->createTable('users_event_log', $spec);
+
+    }
+
+
+function api_data_uninstall(){
+    $table = 'users_event_log';
+    $schema = \Drupal::database()->getConnection()->schema();
+    $schema->dropTable($table);
+}
