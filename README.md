@@ -16,3 +16,8 @@
 => Admin credentials:-
 - username = salah
 - password = asd12345
+
+<br> 
+
+## The docker version of the task
+[Events Management with Docker...]{https://github.com/salah-jr/Event_management_docker}
