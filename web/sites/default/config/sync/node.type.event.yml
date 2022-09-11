@@ -1,0 +1,18 @@
+uuid: 2f655a6c-88c1-47ae-96cc-146a4e928f35
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Event
+type: event
+description: 'Module for managing events'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
