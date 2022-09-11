@@ -25,6 +25,8 @@
 ## The docker version of the task
 [Events Management with Docker...](https://github.com/salah-jr/Event_management_docker)
 
+<br>
+<hr>
 
 ![Opera Snapshot_2022-09-12_013748_localhost](https://user-images.githubusercontent.com/26637798/189553896-f1e29aa8-078c-4581-ad45-1b94faf41d24.png)
 ![Opera Snapshot_2022-09-12_013936_localhost](https://user-images.githubusercontent.com/26637798/189553898-68188e6c-050d-4b2e-a350-2373bec868f8.png)
